@@ -41,6 +41,8 @@ Until this step is done, the form still works: founders copy their application a
 6. In GitHub, open `assets/js/config.js`, click the pencil icon, paste the URL between the quotes after `endpoint:`, and commit.
 7. Test it: open your site, sign up with a test idea, and check that a new row appears in the **Founders** tab with Status *New*. Then subscribe to the newsletter from the footer and check the **Newsletter** tab.
 
+**Confirmation email:** every founder who sends a pitch automatically gets an email in their language (English or Spanish) confirming you received it, explaining the 3-step process (team review, pitch session, welcome to TDZ) and including a copy of their pitch. It is sent from the Google account that owns the sheet, with replies going to `TEAM_EMAIL`. To turn it off, set `SEND_CONFIRMATION` to `false`. Add your website address in `SITE_URL` to show it in the email. Gmail accounts can send up to about 100 of these emails a day.
+
 To get an email for every new sign-up, put your address in `NOTIFY_EMAIL` at the top of the Apps Script and deploy again.
 
 **If you change the Apps Script later:** use **Deploy > Manage deployments**, click the pencil icon, choose *New version* and **Deploy**. The Web app URL stays the same, so the website keeps working.
