@@ -363,13 +363,15 @@
   <div class="foot-brand">
     <a class="brand" href="#top" aria-label="The Desert Zone, home" data-aria="ariaHome" data-aria="ariaHome"><svg aria-hidden="true" viewBox="270 80 996 490"><use href="#dz-mark"></use></svg><span>THE DESERT <b>ZONE</b></span></a>
     <p data-i="f1">Infrastructure and community for founders with great ideas.</p>
-    <div class="news" id="news">
-      <p class="news-title" data-i="f2">Newsletter: founder stories, events and open calls from The Desert ZONE.</p>
+    <form class="news" id="news" novalidate>
+      <label class="news-title" for="news-email" data-i="f2">Newsletter: founder stories, events and open calls from The Desert ZONE.</label>
       <div class="news-row">
-        <a class="btn sm" id="newsSub" href="https://noticias.youngdesert.com/en/subscribe" target="_blank" rel="noopener" data-i="f3">Subscribe</a>
-        <a class="news-read" id="newsRead" href="https://noticias.youngdesert.com/en" target="_blank" rel="noopener" data-i="f22">Read past issues ↗</a>
+        <input id="news-email" type="email" autocomplete="email" placeholder="you@email.com" data-ph="phEmail">
+        <button class="btn sm" type="submit" data-i="f3">Subscribe</button>
       </div>
-    </div>
+      <p class="news-msg" id="newsMsg" aria-live="polite"></p>
+      <a class="news-read" id="newsRead" href="https://noticias.youngdesert.com/en" target="_blank" rel="noopener" data-i="f22">Read past issues ↗</a>
+    </form>
   </div>
   <nav class="foot-cols" aria-label="Footer" data-aria="ariaFooter">
     <div>
@@ -405,7 +407,7 @@
 </div>
 <div class="wrap foot-base">
   <span data-i="k116">Startup incubator &amp; accelerator · © 2026</span>
-  <span class="mail">hello@thedesertzone.com</span>
+  <span class="mail">youngdesert01@gmail.com</span>
 </div>
 </footer>
 <a class="wa-float" id="waFloat" href="https://wa.me/10000000000" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp" data-aria="ariaWa">
@@ -506,7 +508,7 @@
 <div class="f">
 <p class="label" data-i="k158">Send it to us</p>
 <p id="sendNote" data-i="s16" hidden>Press Send and your sign-up and pitch go straight to the TDZ team. We reply by email.</p>
-<div id="copyBlock"><p data-i="k159">Copy your sign-up and pitch and email it to <span class="mail">apply@thedesertzone.com</span>.</p>
+<div id="copyBlock"><p data-i="k159">Copy your sign-up and pitch and email it to <span class="mail">youngdesert01@gmail.com</span>.</p>
 <pre class="summary" id="summary"></pre></div>
 </div>
 </div>
@@ -533,11 +535,16 @@
       <b><span data-i="g5">Pitch your idea</span><span aria-hidden="true">→</span></b>
       <span data-i="g6">Sign up and prepare a 60-second pitch for the TDZ team.</span>
     </button>
-    <a class="choice" id="gateNews" href="https://noticias.youngdesert.com/en/subscribe" target="_blank" rel="noopener">
+    <div class="choice news-choice" id="gateNews">
       <span class="k" data-i="g7">02 · For everyone</span>
-      <b><span data-i="g8">Get the newsletter</span><span aria-hidden="true">↗</span></b>
+      <b><span data-i="g8">Get the newsletter</span></b>
       <span data-i="g9">Founder stories, events and open calls from The Desert ZONE.</span>
-    </a>
+      <form class="news-row gate-form" id="gateNewsForm" novalidate>
+        <input id="gate-email" type="email" autocomplete="email" placeholder="you@email.com" data-ph="phEmail" aria-label="Email" data-aria="ariaEmail">
+        <button class="btn sm" type="submit" data-i="f3">Subscribe</button>
+      </form>
+      <p class="news-msg" id="gateNewsMsg" aria-live="polite"></p>
+    </div>
   </div>
   <button class="later" type="button" id="gateLater" data-i="g10">Explore the site first</button>
 </div>

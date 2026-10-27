@@ -286,13 +286,15 @@
   <div class="foot-brand">
     <a class="brand" href="index.html" aria-label="The Desert Zone, home" data-aria="ariaHome"><svg aria-hidden="true" viewBox="270 80 996 490"><use href="#dz-mark"></use></svg><span>THE DESERT <b>ZONE</b></span></a>
     <p data-i="f1">Infrastructure and community for founders with great ideas.</p>
-    <div class="news" id="news">
-      <p class="news-title" data-i="f2">Newsletter: founder stories, events and open calls from The Desert ZONE.</p>
+    <form class="news" id="news" novalidate>
+      <label class="news-title" for="news-email" data-i="f2">Newsletter: founder stories, events and open calls from The Desert ZONE.</label>
       <div class="news-row">
-        <a class="btn sm" id="newsSub" href="https://noticias.youngdesert.com/en/subscribe" target="_blank" rel="noopener" data-i="f3">Subscribe</a>
-        <a class="news-read" id="newsRead" href="https://noticias.youngdesert.com/en" target="_blank" rel="noopener" data-i="f22">Read past issues ↗</a>
+        <input id="news-email" type="email" autocomplete="email" placeholder="you@email.com" data-ph="phEmail">
+        <button class="btn sm" type="submit" data-i="f3">Subscribe</button>
       </div>
-    </div>
+      <p class="news-msg" id="newsMsg" aria-live="polite"></p>
+      <a class="news-read" id="newsRead" href="https://noticias.youngdesert.com/en" target="_blank" rel="noopener" data-i="f22">Read past issues ↗</a>
+    </form>
   </div>
   <nav class="foot-cols" aria-label="Footer" data-aria="ariaFooter">
     <div>
@@ -328,7 +330,7 @@
 </div>
 <div class="wrap foot-base">
   <span data-i="k116">Startup incubator &amp; accelerator · © 2026</span>
-  <span class="mail">hello@thedesertzone.com</span>
+  <span class="mail">youngdesert01@gmail.com</span>
 </div>
 </footer>
 <a class="wa-float" id="waFloat" href="https://wa.me/10000000000" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp" data-aria="ariaWa">
