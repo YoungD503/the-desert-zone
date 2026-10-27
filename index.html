@@ -1,0 +1,548 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>The Desert Zone · Startup incubator &amp; accelerator</title>
+<meta name="description" content="The Desert Zone gives founders the infrastructure and the community to turn a great idea into a real company. Start as an Incubator or Accelerator team.">
+<meta name="theme-color" content="#06070A">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Desert Zone · Great ideas need a place to launch">
+<meta property="og:description" content="Infrastructure and community for founders with great ideas. Pitch your idea and join TDZ.">
+<meta property="og:image" content="assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..800&family=IBM+Plex+Mono:wght@400;500&family=Michroma&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<svg aria-hidden="true" height="0" style="position:absolute" width="0"><defs>
+  <radialGradient id="moonShade" cx="0.28" cy="0.30" r="0.85">
+    <stop offset="0" stop-color="#4A4A4A"/>
+    <stop offset="0.38" stop-color="#2A2A2A"/>
+    <stop offset="0.62" stop-color="#0E0E0E"/>
+    <stop offset="1" stop-color="#050505"/>
+  </radialGradient>
+  <radialGradient id="crater" cx="0.62" cy="0.62" r="0.7">
+    <stop offset="0" stop-color="#121212"/>
+    <stop offset="0.75" stop-color="#1E1E1E"/>
+    <stop offset="1" stop-color="#4A4A4A"/>
+  </radialGradient>
+  <linearGradient id="litFade" x1="0" y1="0" x2="1" y2="0.55">
+    <stop offset="0" stop-color="#fff"/>
+    <stop offset="0.45" stop-color="#fff" stop-opacity=".85"/>
+    <stop offset="0.72" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="rimGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#FFFFFF"/>
+    <stop offset="0.5" stop-color="#D8D8D8"/>
+    <stop offset="1" stop-color="#8A8A8A"/>
+  </linearGradient>
+  <linearGradient id="ridgeL" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#9A9A9A"/>
+    <stop offset="0.6" stop-color="#E6E6E6"/>
+    <stop offset="1" stop-color="#FFFFFF"/>
+  </linearGradient>
+  <linearGradient id="ridgeR" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF"/>
+    <stop offset="0.5" stop-color="#CFCFCF"/>
+    <stop offset="1" stop-color="#8E8E8E"/>
+  </linearGradient>
+  <linearGradient id="silver" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#E4E4E4"/>
+    <stop offset="0.5" stop-color="#B9B9B9"/>
+    <stop offset="1" stop-color="#8C8C8C"/>
+  </linearGradient>
+  <linearGradient id="trailGrad" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/>
+    <stop offset="1" stop-color="#FFFFFF"/>
+  </linearGradient>
+  <clipPath id="moonClip"><circle cx="790" cy="340" r="238"/></clipPath>
+  <clipPath id="aboveRidge"><path d="M0 0 L1536 0 L1536 552 L1210 552 L842 438 L822 424 L330 556 L0 556 Z"/></clipPath>
+  <mask id="litMask"><rect x="552" y="102" width="476" height="476" fill="url(#litFade)"/></mask>
+  <mask id="crescent">
+    <circle cx="790" cy="340" r="238" fill="#fff"/>
+    <circle cx="806" cy="349" r="235" fill="#000"/>
+  </mask>
+
+<linearGradient id="moonLit" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".55" stop-color="#DADDE2"/><stop offset="1" stop-color="#8A8F98"/></linearGradient>
+<linearGradient id="trailFade" gradientUnits="userSpaceOnUse" x1="0" y1="562.0" x2="0" y2="121.19999999999999"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/><stop offset=".35" stop-color="#FFFFFF" stop-opacity=".55"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+<linearGradient id="ridgeL2" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8E939C"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+<linearGradient id="ridgeEdge" gradientUnits="userSpaceOnUse" x1="286" y1="0" x2="1250" y2="0"><stop offset="0" stop-color="#8E939C"/><stop offset=".5" stop-color="#FFFFFF"/><stop offset="1" stop-color="#6E737C"/></linearGradient>
+<radialGradient id="discShade" cx="0.3" cy="0.35" r="0.8"><stop offset="0" stop-color="#2E3036"/><stop offset=".55" stop-color="#121317"/><stop offset="1" stop-color="#050506"/></radialGradient>
+<clipPath id="aboveRidge2"><path d="M0 0 L1536 0 L1536 548 L1250 556 L1250 556 L1020 480 L958 462 L900 482 L768 396 L640 484 L585 466 L520 486 L286 556 L0 556 Z"/></clipPath>
+</defs></svg>
+<header class="top">
+<div class="wrap">
+<a aria-label="The Desert Zone, home" data-aria="ariaHome" class="brand" href="#top">
+<svg aria-hidden="true" viewBox="270 80 996 490"><use href="#dz-mark"></use></svg>
+<span>THE DESERT <b>ZONE</b></span>
+</a>
+<nav aria-label="Sections" data-aria="ariaNav" class="nav" data-aria="ariaNav">
+<div class="nav-item"><a class="nav-link" href="#build"><span data-i="k0">What we build</span><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5"/></svg></a><div class="menu">
+<a class="mi" href="#infra"><b data-i="m1">Infrastructure</b><span data-i="m2">Workspace, tools, company setup and investors</span></a>
+<a class="mi" href="#community"><b data-i="m3">Community</b><span data-i="m4">Mentors, founder cohort and pitch nights</span></a>
+</div></div>
+<div class="nav-item"><a class="nav-link" href="#start"><span data-i="k1">Where to start</span><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5"/></svg></a><div class="menu">
+<a class="mi" href="#incubator"><b data-i="m5">Incubator</b><span data-i="m6">Start here with an idea</span></a>
+<a class="mi" href="#accelerator"><b data-i="m7">Accelerator</b><span data-i="m8">Start here if you are growing</span></a>
+<a class="mi" href="#fit"><b data-i="m9">Find your fit</b><span data-i="m10">Answer three questions</span></a>
+</div></div>
+<div class="nav-item"><a class="nav-link" href="#path"><span data-i="k2">The path</span><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5"/></svg></a><div class="menu">
+<a class="mi" href="#join" data-join><b data-i="m11">Pitch your idea</b><span data-i="m12">Sign up and prepare your 60-second pitch</span></a>
+<a class="mi" href="#path"><b data-i="m13">Build with TDZ</b><span data-i="m14">Incubator or Accelerator, at your stage</span></a>
+<a class="mi" href="#path"><b data-i="m15">Demo Day and beyond</b><span data-i="m16">Pitch to investors and launch</span></a>
+</div></div>
+<div class="nav-item"><a class="nav-link" href="learn.html"><span data-i="klearn">Learn</span><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5"/></svg></a><div class="menu">
+<a class="mi" href="learn.html#templates"><b data-i="m17">Templates</b><span data-i="m18">Pitch deck, financial model and trackers</span></a>
+<a class="mi" href="learn.html#guides"><b data-i="m19">Guides</b><span data-i="m20">Step-by-step guides for each stage</span></a>
+<a class="mi" href="learn.html#support"><b data-i="m21">Mentorship & support</b><span data-i="m22">Mentors, office hours and clinics</span></a>
+</div></div>
+<a class="nav-link" data-i="k3" href="#faq">FAQ</a>
+</nav>
+<div class="lang" role="group" data-aria="ariaLang" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="es" aria-pressed="false">ES</button></div>
+<button class="btn sm" data-i="k4" data-join="" type="button">Join TDZ</button>
+<button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mnav" aria-label="Menu" data-aria="ariaMenu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div>
+</header>
+<div class="mnav" id="mnav" hidden>
+<div class="g"><a href="#build" data-i="k0">What we build</a><div class="sub">
+<a href="#infra" data-i="m1">Infrastructure</a>
+<a href="#community" data-i="m3">Community</a>
+</div></div>
+<div class="g"><a href="#start" data-i="k1">Where to start</a><div class="sub">
+<a href="#incubator" data-i="m5">Incubator</a>
+<a href="#accelerator" data-i="m7">Accelerator</a>
+<a href="#fit" data-i="m9">Find your fit</a>
+</div></div>
+<div class="g"><a href="#path" data-i="k2">The path</a><div class="sub">
+<a href="#join" data-join data-i="m11">Pitch your idea</a>
+<a href="#path" data-i="m13">Build with TDZ</a>
+<a href="#path" data-i="m15">Demo Day and beyond</a>
+</div></div>
+<div class="g"><a href="learn.html" data-i="klearn">Learn</a><div class="sub">
+<a href="learn.html#templates" data-i="m17">Templates</a>
+<a href="learn.html#guides" data-i="m19">Guides</a>
+<a href="learn.html#support" data-i="m21">Mentorship & support</a>
+</div></div>
+<div class="g"><a href="#faq" data-i="k3">FAQ</a></div>
+</div>
+<main id="top">
+<section class="hero">
+<div class="wrap">
+<div>
+<p class="status"><i aria-hidden="true"></i><span data-i="h0">Now accepting pitches</span></p>
+<p class="label" data-i="k5">Startup incubator &amp; accelerator</p>
+<h1 data-i="k6">Great ideas need a place <em>to launch.</em></h1>
+<p class="lede" data-i="k7">The Desert Zone gives founders the infrastructure and the community to turn a great idea into a real company.</p>
+<div class="ctas">
+<button class="btn" data-i="k8" data-join="" type="button">Pitch your idea</button>
+<a class="btn ghost" data-i="k9" href="#build">See what we build</a>
+</div>
+</div>
+<div>
+<div class="sky">
+<canvas aria-hidden="true" id="stars"></canvas>
+<svg aria-label="The Desert Zone logo: a crescent moon rising behind a desert ridge as a rocket launches" data-aria="ariaLogo" role="img" viewBox="270 80 996 490">
+<g id="dz-mark">
+<g clip-path="url(#aboveRidge2)"><g class="moon-rise">
+  <path d="M759.90 98.14 L752.80 98.50 L745.72 99.07 L738.65 99.86 L731.62 100.87 L724.62 102.09 L717.65 103.53 L710.74 105.18 L703.88 107.04 L697.08 109.11 L690.34 111.38 L683.68 113.86 L677.10 116.55 L670.61 119.43 L664.20 122.52 L657.89 125.79 L651.69 129.26 L645.59 132.92 L639.61 136.76 L633.75 140.79 L628.02 144.99 L622.42 149.36 L616.95 153.91 L611.63 158.62 L606.45 163.49 L601.43 168.52 L596.56 173.69 L591.85 179.02 L587.31 184.49 L582.93 190.09 L578.73 195.83 L574.71 201.69 L570.87 207.67 L567.22 213.77 L563.75 219.97 L560.48 226.28 L557.40 232.69 L554.51 239.18 L551.83 245.77 L549.35 252.43 L547.08 259.16 L545.01 265.97 L543.16 272.83 L541.51 279.74 L540.08 286.70 L538.86 293.71 L537.85 300.74 L537.06 307.81 L536.49 314.89 L536.14 321.99 L536.00 329.10 L536.08 336.21 L536.38 343.31 L536.90 350.40 L537.63 357.47 L538.58 364.51 L539.75 371.53 L541.13 378.50 L542.72 385.43 L544.52 392.30 L546.54 399.12 L548.76 405.87 L551.18 412.55 L553.82 419.16 L556.65 425.68 L559.68 432.11 L562.90 438.44 L566.32 444.67 L569.93 450.80 L573.72 456.81 L577.70 462.70 L581.85 468.47 L586.18 474.11 L590.68 479.61 L595.35 484.97 L600.18 490.19 L605.16 495.25 L610.30 500.16 L615.59 504.92 L621.02 509.50 L626.59 513.92 L632.29 518.17 L638.12 522.24 L644.07 526.12 L650.13 529.83 L656.31 533.35 L662.59 536.67 L668.98 539.80 L675.45 542.74 L682.01 545.48 L688.65 548.01 L691.95 538.96 L685.87 535.81 L679.91 532.50 L674.06 529.02 L668.35 525.39 L662.76 521.60 L657.31 517.67 L651.99 513.59 L646.80 509.38 L641.76 505.03 L636.86 500.56 L632.11 495.96 L627.51 491.24 L623.05 486.41 L618.75 481.47 L614.60 476.43 L610.60 471.28 L606.76 466.04 L603.08 460.71 L599.56 455.30 L596.19 449.80 L592.99 444.23 L589.95 438.59 L587.07 432.87 L584.36 427.10 L581.81 421.26 L579.42 415.37 L577.20 409.42 L575.14 403.43 L573.25 397.40 L571.52 391.32 L569.96 385.21 L568.57 379.07 L567.34 372.90 L566.28 366.70 L565.38 360.48 L564.65 354.25 L564.09 348.00 L563.69 341.74 L563.46 335.48 L563.40 329.21 L563.51 322.94 L563.78 316.67 L564.21 310.42 L564.82 304.17 L565.59 297.94 L566.53 291.73 L567.63 285.54 L568.90 279.37 L570.34 273.24 L571.94 267.14 L573.71 261.07 L575.64 255.05 L577.74 249.07 L580.01 243.14 L582.44 237.26 L585.03 231.43 L587.79 225.67 L590.71 219.98 L593.79 214.35 L597.03 208.80 L600.43 203.32 L604.00 197.93 L607.72 192.62 L611.60 187.41 L615.63 182.29 L619.82 177.27 L624.16 172.36 L628.66 167.55 L633.30 162.87 L638.09 158.30 L643.03 153.85 L648.10 149.54 L653.32 145.36 L658.68 141.32 L664.16 137.42 L669.78 133.68 L675.53 130.08 L681.40 126.65 L687.40 123.38 L693.50 120.28 L699.72 117.35 L706.05 114.59 L712.48 112.02 L719.01 109.64 L725.63 107.45 L732.35 105.45 L739.14 103.65 L746.01 102.05 L752.95 100.66 L759.95 99.48 Z" fill="url(#moonLit)"/>
+</g></g>
+<g class="ridge-in">
+  <path d="M286 556 L520 486 L585 466 L640 484 L768 396 L900 482 L958 462 L1020 480 L1250 556 L1250 640 L286 640 Z" fill="#000000"/>
+  <path d="M286 556 L520 486 L585 466 L576 478 L524 495 Z" fill="url(#ridgeL2)"/>
+  <path d="M640 484 L768 396 L761 418 L652 491 Z" fill="url(#ridgeL2)"/>
+  <path d="M900 482 L958 462 L950 474 L907 489 Z" fill="url(#ridgeL2)"/>
+  <path d="M768 396 L900 482 L885 482 L772 406 Z" fill="url(#ridgeL2)"/>
+  <path d="M286 556 L520 486 L585 466 L640 484 L768 396 L900 482 L958 462 L1020 480 L1250 556" fill="none" stroke="url(#ridgeEdge)" stroke-width="3" stroke-linejoin="round"/>
+</g>
+
+
+<g clip-path="url(#aboveRidge2)"><g class="orbit">
+  <path d="M847.35 548.01 L852.82 545.94 L858.24 543.73 L863.59 541.39 L868.89 538.91 L874.13 536.30 L879.29 533.56 L884.39 530.69 L889.41 527.69 L894.36 524.57 L899.22 521.32 L904.00 517.96 L908.70 514.47 L913.30 510.86 L917.81 507.14 L922.23 503.31 L926.55 499.37 L930.77 495.32 L934.89 491.16 L938.90 486.90 L942.80 482.54 L946.59 478.09 L950.26 473.54 L953.82 468.90 L957.27 464.17 L960.59 459.36 L963.79 454.46 L966.86 449.49 L969.81 444.44 L972.63 439.31 L975.32 434.12 L977.88 428.86 L980.31 423.54 L982.60 418.16 L984.75 412.72 L986.77 407.23 L988.65 401.69 L990.38 396.11 L991.98 390.48 L993.43 384.82 L994.74 379.12 L995.91 373.38 L996.93 367.63 L997.80 361.84 L998.53 356.04 L999.12 350.22 L999.55 344.39 L999.84 338.55 L999.98 332.70 L999.98 326.85 L999.83 321.00 L999.53 315.16 L999.08 309.33 L998.48 303.51 L997.74 297.71 L996.86 291.93 L995.82 286.17 L994.65 280.45 L993.32 274.75 L991.86 269.09 L990.25 263.46 L988.51 257.88 L986.62 252.34 L984.59 246.86 L982.43 241.43 L980.13 236.05 L977.69 230.73 L975.12 225.48 L972.42 220.29 L969.59 215.17 L966.63 210.13 L963.55 205.16 L960.34 200.27 L957.01 195.46 L953.55 190.74 L949.98 186.11 L946.30 181.56 L942.50 177.12 L938.59 172.77 L934.57 168.52 L930.45 164.37 L926.22 160.33 L921.90 156.39 L917.47 152.57 L912.95 148.86 L908.34 145.26 L903.64 141.78 L898.85 138.42 L893.98 135.18 L889.03 132.07 L884.00 129.08 L880.55 135.06 L885.28 138.20 L889.93 141.45 L894.49 144.81 L898.96 148.27 L903.34 151.84 L907.63 155.51 L911.82 159.28 L915.91 163.14 L919.90 167.10 L923.80 171.15 L927.59 175.29 L931.27 179.52 L934.85 183.82 L938.31 188.21 L941.67 192.68 L944.92 197.22 L948.05 201.83 L951.07 206.52 L953.97 211.27 L956.76 216.08 L959.43 220.96 L961.97 225.89 L964.40 230.89 L966.71 235.93 L968.89 241.02 L970.95 246.17 L972.89 251.35 L974.70 256.58 L976.38 261.85 L977.94 267.15 L979.37 272.48 L980.67 277.85 L981.85 283.24 L982.89 288.66 L983.81 294.10 L984.60 299.56 L985.26 305.03 L985.78 310.52 L986.18 316.02 L986.45 321.52 L986.58 327.03 L986.59 332.54 L986.46 338.05 L986.20 343.56 L985.82 349.06 L985.30 354.54 L984.65 360.02 L983.88 365.48 L982.97 370.92 L981.93 376.34 L980.77 381.74 L979.48 387.10 L978.05 392.44 L976.51 397.75 L974.83 403.02 L973.03 408.25 L971.10 413.44 L969.05 418.58 L966.88 423.68 L964.58 428.73 L962.17 433.72 L959.63 438.66 L956.97 443.54 L954.19 448.36 L951.30 453.12 L948.29 457.81 L945.16 462.43 L941.93 466.98 L938.58 471.45 L935.12 475.84 L931.55 480.16 L927.87 484.39 L924.09 488.53 L920.21 492.59 L916.22 496.55 L912.14 500.43 L907.95 504.20 L903.67 507.88 L899.30 511.46 L894.84 514.93 L890.28 518.30 L885.64 521.56 L880.92 524.70 L876.11 527.74 L871.22 530.66 L866.26 533.46 L861.22 536.14 L856.11 538.71 L850.94 541.14 L845.69 543.45 Z" fill="url(#trailFade)"/>
+  <path d="M958.04 463.07 L961.28 458.33 L964.39 453.51 L967.38 448.62 L970.25 443.65 L973.00 438.62 L975.62 433.52 L978.12 428.35 L980.49 423.13 L982.73 417.85 L984.83 412.51 L986.81 407.13 L988.65 401.69 L990.35 396.22 L991.92 390.70 L993.35 385.14 L994.65 379.55 L995.80 373.94 L996.82 368.29 L997.69 362.62 L998.43 356.93 L999.03 351.23 L999.48 345.51 L999.79 339.78 L999.96 334.05 L999.99 328.31 L999.88 322.58 L999.63 316.85 L999.23 311.12 L998.69 305.41 L998.02 299.72 L997.20 294.04 L996.24 288.39 L995.14 282.76 L993.90 277.15 L992.53 271.59 L991.01 266.05 L989.36 260.56 L987.58 255.11 L985.66 249.70 L983.61 244.34 L981.43 239.04 L979.11 233.79 L976.67 228.60 L974.10 223.47 L971.40 218.41 L968.58 213.42 L965.64 208.49 L962.57 203.64 L959.39 198.87 L956.09 194.18 L952.67 189.57 L949.14 185.05 L945.51 180.61 L941.76 176.27 L937.90 172.02 L933.95 167.87 L929.89 163.82 L925.73 159.87 L921.47 156.02 L917.13 152.28 L916.22 153.36 L920.51 157.11 L924.71 160.96 L928.82 164.92 L932.82 168.97 L936.72 173.12 L940.52 177.36 L944.22 181.70 L947.80 186.12 L951.28 190.63 L954.64 195.22 L957.89 199.90 L961.02 204.65 L964.04 209.47 L966.94 214.37 L969.71 219.34 L972.36 224.37 L974.89 229.47 L977.29 234.62 L979.56 239.83 L981.71 245.10 L983.72 250.42 L985.61 255.78 L987.36 261.19 L988.98 266.64 L990.47 272.12 L991.82 277.64 L993.03 283.19 L994.11 288.77 L995.05 294.38 L995.85 300.00 L996.52 305.65 L997.05 311.30 L997.43 316.97 L997.68 322.65 L997.79 328.33 L997.77 334.01 L997.60 339.69 L997.29 345.36 L996.85 351.03 L996.26 356.68 L995.54 362.32 L994.68 367.93 L993.68 373.53 L992.55 379.10 L991.28 384.64 L989.87 390.14 L988.33 395.61 L986.66 401.05 L984.85 406.44 L982.91 411.78 L980.84 417.08 L978.64 422.32 L976.32 427.51 L973.86 432.64 L971.28 437.71 L968.58 442.71 L965.76 447.65 L962.81 452.52 L959.75 457.32 L956.57 462.04 Z" fill="#FFFFFF" opacity=".55"/>
+  <g transform="translate(868.84 127.74) rotate(-63.50) scale(1.25)"><path d="M0 -30 C 7 -20, 8 -6, 7 12 L -7 12 C -8 -6, -7 -20, 0 -30 Z" fill="#FFFFFF"/><path d="M-7 4 L -15 18 L -7 14 Z M7 4 L 15 18 L 7 14 Z" fill="#FFFFFF"/><circle cx="0" cy="-10" r="2.6" fill="#000000"/><path d="M-4 13 L 0 24 L 4 13 Z" fill="#FFFFFF" opacity=".7"/></g>
+</g></g></g>
+</svg>
+</div>
+<div aria-hidden="true" class="coords"><span data-i="k10">Idea</span><span data-i="k11">Build</span><span data-i="k12">Launch</span></div>
+</div>
+</div>
+</section>
+<div class="ticker" aria-hidden="true"><div class="ticker-track"><ul><li data-i="t1">Infrastructure</li><li data-i="t2">Community</li><li data-i="t3">Mentors</li><li data-i="t4">Workspace</li><li data-i="t5">Pitch nights</li><li data-i="t6">Demo Day</li><li data-i="t7">Investor network</li><li data-i="t8">Incubator</li><li data-i="t9">Accelerator</li></ul><ul><li data-i="t1">Infrastructure</li><li data-i="t2">Community</li><li data-i="t3">Mentors</li><li data-i="t4">Workspace</li><li data-i="t5">Pitch nights</li><li data-i="t6">Demo Day</li><li data-i="t7">Investor network</li><li data-i="t8">Incubator</li><li data-i="t9">Accelerator</li></ul></div></div>
+<section class="band" id="build">
+<div class="wrap">
+<div class="head">
+<p class="label" data-i="k13">What we build for founders</p>
+<h2 data-i="k14">Infrastructure to build on. A community to build with.</h2>
+<p data-i="k15">Most ideas stall for lack of the basics: a place to work, the right tools, and people who have done it before. We provide both sides so you can focus on the idea.</p>
+</div>
+<div class="pillars">
+<article class="pillar" id="infra">
+<h3 data-i="k16">Infrastructure</h3>
+<p data-i="k17">Everything a young company needs to operate, ready on day one.</p>
+<dl>
+<div><dt data-i="k18">Workspace</dt><dd data-i="k19">Desks, meeting rooms and a pitch room for demos and investor calls.</dd></div>
+<div><dt data-i="k20">Tools and tech</dt><dd data-i="k21">Software, cloud credits and help choosing how to build your product.</dd></div>
+<div><dt data-i="k22">Company setup</dt><dd data-i="k23">Guidance on incorporation, ownership, contracts and finances.</dd></div>
+<div><dt data-i="k24">Investor network</dt><dd data-i="k25">Introductions to angels and funds when your startup is ready to raise.</dd></div>
+</dl>
+</article>
+<article class="pillar" id="community">
+<h3 data-i="k26">Community</h3>
+<p data-i="k27">People who push your idea forward and stay with you after launch.</p>
+<dl>
+<div><dt data-i="k28">Mentors</dt><dd data-i="k29">Founders and operators matched to your market who meet with you regularly.</dd></div>
+<div><dt data-i="k30">Founder cohort</dt><dd data-i="k31">A group of teams building at the same time, sharing wins and problems.</dd></div>
+<div><dt data-i="k32">Pitch nights</dt><dd data-i="k33">Regular sessions to practice your pitch and get honest feedback.</dd></div>
+<div><dt data-i="k34">Alumni network</dt><dd data-i="k35">Ongoing access to the TDZ community after you finish.</dd></div>
+</dl>
+</article>
+</div>
+</div>
+</section>
+<section class="band" id="start">
+<div class="wrap">
+<div class="head">
+<p class="label" data-i="k36">Where to start</p>
+<h2 data-i="k37">Join at the stage your idea is in today.</h2>
+<p data-i="k38">Incubator teams move into the Accelerator when they are ready, with the same mentors and community behind them.</p>
+</div>
+<div class="tracks">
+<article class="track inc" id="incubator">
+<header>
+<span class="tag" data-i="k39">Start here with an idea</span>
+<h3 data-i="k40">Incubator</h3>
+<p class="for" data-i="k41">For founders with an idea or early prototype who need to test it and build a first version.</p>
+</header>
+<dl class="spec">
+<dt data-i="k42">Stage</dt><dd data-i="k43">Idea to first prototype</dd>
+<dt data-i="k44">Length</dt><dd data-i="k45">16 weeks</dd>
+<dt data-i="k46">Focus</dt><dd data-i="k47">Validate the problem and build a first version</dd>
+<dt data-i="k48">Ends with</dt><dd data-i="k49">A tested prototype and a plan to reach first users</dd>
+</dl>
+<ul>
+<li data-i="k50">Test the idea through structured customer interviews</li>
+<li data-i="k51">Build a prototype in guided build sprints</li>
+<li data-i="k52">Find co-founders and shape the founding team</li>
+<li data-i="k53">Set up the company the right way from the start</li>
+</ul>
+<button class="btn ghost" data-i="k54" data-join="incubator" type="button">Pitch an idea</button>
+</article>
+<article class="track acc" id="accelerator">
+<header>
+<span class="tag" data-i="k55">Start here if you are growing</span>
+<h3 data-i="k56">Accelerator</h3>
+<p class="for" data-i="k57">For startups with a working product and early users, ready to grow and raise.</p>
+</header>
+<dl class="spec">
+<dt data-i="k58">Stage</dt><dd data-i="k59">Launched product with early users or revenue</dd>
+<dt data-i="k60">Length</dt><dd data-i="k61">12 weeks</dd>
+<dt data-i="k62">Focus</dt><dd data-i="k63">Growth, sales and fundraising</dd>
+<dt data-i="k64">Ends with</dt><dd data-i="k65">Demo Day in front of investors</dd>
+</dl>
+<ul>
+<li data-i="k66">Set weekly growth goals with a dedicated mentor</li>
+<li data-i="k67">Sharpen go-to-market, pricing and sales</li>
+<li data-i="k68">Prepare your pitch deck, metrics and data room</li>
+<li data-i="k69">Meet investors through introductions and Demo Day</li>
+</ul>
+<button class="btn" data-i="k70" data-join="accelerator" type="button">Pitch your startup</button>
+</article>
+</div>
+</div>
+</section>
+<section class="band path" id="path">
+<div class="wrap">
+<div class="head">
+<p class="label" data-i="k71">The path</p>
+<h2 data-i="k72">From a great idea to a launched company.</h2>
+</div>
+<svg aria-hidden="true" class="arc" viewBox="0 0 1180 150">
+<defs><linearGradient id="arcG" x1="0" x2="1"><stop offset="0" stop-color="#8C9099"></stop><stop offset="1" stop-color="#ECEDEF"></stop></linearGradient></defs>
+<path d="M20 130 C 380 128, 760 110, 1160 22" fill="none" stroke="url(#arcG)" stroke-width="2"></path>
+<circle cx="20" cy="130" fill="#06070A" r="7" stroke="#8C9099" stroke-width="2"></circle>
+<circle cx="415" cy="119.2" fill="#06070A" r="7" stroke="#ECEDEF" stroke-width="2"></circle>
+<circle cx="805" cy="83.8" fill="#CDB48A" r="7"></circle>
+<g transform="translate(1160 22) rotate(64)"><path d="M0 -14 C 4 -9, 4 -3, 3.5 6 L -3.5 6 C -4 -3, -4 -9, 0 -14 Z M-3.5 2 L -8 9 L -3.5 7 Z M3.5 2 L 8 9 L 3.5 7 Z" fill="#ECEDEF"></path></g>
+</svg>
+<div class="stages">
+<div class="stage">
+<p class="label" data-i="k73"><b>Step 1</b> · Pitch</p>
+<h3 data-i="k74">Share your idea</h3>
+<p data-i="k75">Sign up and prepare a 60-second pitch. Selected founders present it live to the TDZ team.</p>
+</div>
+<div class="stage">
+<p class="label" data-i="k76"><b>Step 2</b> · Build</p>
+<h3 data-i="k77">Incubator or Accelerator</h3>
+<p data-i="k78">Use our infrastructure and community to validate, build and grow, at the stage that fits you.</p>
+</div>
+<div class="stage">
+<p class="label" data-i="k79"><b>Step 3</b> · Launch</p>
+<h3 data-i="k80">Demo Day and beyond</h3>
+<p data-i="k81">Pitch to investors, launch to customers and stay part of the TDZ community.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="band" id="fit">
+<div class="wrap">
+<div class="head">
+<p class="label" data-i="k82">Mission check</p>
+<h2 data-i="k83">Not sure where to start? Answer three questions.</h2>
+</div>
+<div class="quiz">
+<form aria-label="Starting point questions" data-aria="ariaQuiz" class="q" id="quiz">
+<fieldset>
+<legend data-i="k84">Where is your product right now?</legend>
+<div class="opts">
+<label><input id="q1a" name="q1" type="radio" value="0"/><span data-i="k85">Still an idea</span></label>
+<label><input id="q1b" name="q1" type="radio" value="1"/><span data-i="k86">Prototype or beta</span></label>
+<label><input id="q1c" name="q1" type="radio" value="2"/><span data-i="k87">Launched</span></label>
+</div>
+</fieldset>
+<fieldset>
+<legend data-i="k88">Do you have users or customers?</legend>
+<div class="opts">
+<label><input id="q2a" name="q2" type="radio" value="0"/><span data-i="k89">Not yet</span></label>
+<label><input id="q2b" name="q2" type="radio" value="1"/><span data-i="k90">A few testers</span></label>
+<label><input id="q2c" name="q2" type="radio" value="2"/><span data-i="k91">Active users or revenue</span></label>
+</div>
+</fieldset>
+<fieldset>
+<legend data-i="k92">What do you need most in the next 3 months?</legend>
+<div class="opts">
+<label><input id="q3a" name="q3" type="radio" value="0"/><span data-i="k93">Validate the idea</span></label>
+<label><input id="q3b" name="q3" type="radio" value="1"/><span data-i="k94">Build the product</span></label>
+<label><input id="q3c" name="q3" type="radio" value="2"/><span data-i="k95">Grow and raise money</span></label>
+</div>
+</fieldset>
+</form>
+<div aria-live="polite" class="result" id="result">
+<p class="label" data-i="k96">Your starting point</p>
+<div aria-hidden="true" class="meter"><i></i><i></i><i></i></div>
+<p class="big" data-i="k97" id="rTitle">Answer to see</p>
+<p data-i="k98" id="rText">Pick one answer for each question and we will suggest where to begin.</p>
+<button class="btn" data-i="k99" hidden="" id="rBtn" type="button">Pitch your idea</button>
+</div>
+</div>
+</div>
+</section>
+<section class="band" id="faq">
+<div class="wrap">
+<div class="head">
+<p class="label" data-i="k100">Questions</p>
+<h2 data-i="k101">Frequently asked questions</h2>
+</div>
+<div class="faq">
+<details><summary data-i="k102">Do I need a finished pitch to sign up?</summary><p data-i="k103">No. The sign-up form walks you through the five parts of a strong pitch and shows how long it will take to say out loud. You can refine it before you present.</p></details>
+<details><summary data-i="k104">How do I become part of the TDZ team?</summary><p data-i="k105">Sign up and send your pitch. Our team reviews every submission and invites selected founders to present their idea live. After the pitch session, we let you know whether you are joining and where you will start.</p></details>
+<details><summary data-i="k106">Can I start in the Incubator and move to the Accelerator?</summary><p data-i="k107">Yes. When your team has a launched product and early users, you can move into the next Accelerator group with the same mentors and community.</p></details>
+<details><summary data-i="k108">Do I need a technical co-founder?</summary><p data-i="k109">No. Many teams start without one. We help you plan how to build your first version and connect you with potential co-founders.</p></details>
+<details><summary data-i="k110">Does The Desert Zone take equity?</summary><p data-i="k111">Terms, including any investment and equity, are shared with founders during the pitch session so you can review them before you commit.</p></details>
+</div>
+</div>
+</section>
+<section class="band launch">
+<div class="wrap">
+<div>
+<p class="label" data-i="k112">Join The Desert Zone</p>
+<h2 data-i="k113">Have a great idea? Show us.</h2>
+<p data-i="k114">Sign up, prepare your 60-second pitch, and take the first step toward joining the TDZ team.</p>
+</div>
+<button class="btn" data-i="k115" data-join="" type="button">Pitch your idea</button>
+</div>
+</section>
+</main>
+<footer class="foot">
+<div class="wrap foot-main">
+  <div class="foot-brand">
+    <a class="brand" href="#top" aria-label="The Desert Zone, home" data-aria="ariaHome" data-aria="ariaHome"><svg aria-hidden="true" viewBox="270 80 996 490"><use href="#dz-mark"></use></svg><span>THE DESERT <b>ZONE</b></span></a>
+    <p data-i="f1">Infrastructure and community for founders with great ideas.</p>
+    <div class="news" id="news">
+      <p class="news-title" data-i="f2">Newsletter: founder stories, events and open calls from The Desert ZONE.</p>
+      <div class="news-row">
+        <a class="btn sm" id="newsSub" href="https://noticias.youngdesert.com/en/subscribe" target="_blank" rel="noopener" data-i="f3">Subscribe</a>
+        <a class="news-read" id="newsRead" href="https://noticias.youngdesert.com/en" target="_blank" rel="noopener" data-i="f22">Read past issues ↗</a>
+      </div>
+    </div>
+  </div>
+  <nav class="foot-cols" aria-label="Footer" data-aria="ariaFooter">
+    <div>
+      <p class="label" data-i="f4">Explore</p>
+      <ul>
+        <li><a href="#build" data-i="f5">What we build</a></li>
+        <li><a href="#start" data-i="f6">Where to start</a></li>
+        <li><a href="#path" data-i="f7">The path</a></li>
+        <li><a href="#fit" data-i="f8">Find your fit</a></li>
+        <li><a href="#faq" data-i="f9">FAQ</a></li>
+        <li><button type="button" class="linkish" data-join data-i="f10">Join TDZ</button></li>
+      </ul>
+    </div>
+    <div>
+      <p class="label" data-i="f11">Resources</p>
+      <ul>
+        <li><a href="https://noticias.youngdesert.com/en" target="_blank" rel="noopener" data-news="home" data-i="f12">Newsletter ↗</a></li>
+        <li><span class="soon-item"><span data-i="f13">Software</span> <em class="soon" data-i="f17">Soon</em></span><small data-i="f14">Tools we build for founders</small></li>
+        <li><a href="learn.html" data-i="f15">Learn</a><small data-i="f16">Guides, workshops and courses</small></li>
+        <li><span class="soon-item"><span>Store</span> <em class="soon" data-i="f19">Soon</em></span><small data-i="f20">TDZ gear and merch</small></li>
+      </ul>
+    </div>
+    <div>
+      <p class="label" data-i="f21">Follow us</p>
+      <ul>
+        <li><a href="https://www.instagram.com/thedesertzone" target="_blank" rel="noopener">Instagram ↗</a></li>
+        <li><a href="https://www.facebook.com/thedesertzone" target="_blank" rel="noopener">Facebook ↗</a></li>
+        <li><a href="https://www.linkedin.com/company/thedesertzone" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+        <li><a href="https://wa.me/10000000000" target="_blank" rel="noopener" data-wa>WhatsApp ↗</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="wrap foot-base">
+  <span data-i="k116">Startup incubator &amp; accelerator · © 2026</span>
+  <span class="mail">hello@thedesertzone.com</span>
+</div>
+</footer>
+<a class="wa-float" id="waFloat" href="https://wa.me/10000000000" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp" data-aria="ariaWa">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-8l-5 4v-4H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" fill="currentColor"/><circle cx="8.2" cy="11" r="1.2" fill="var(--wa-ink)"/><circle cx="12" cy="11" r="1.2" fill="var(--wa-ink)"/><circle cx="15.8" cy="11" r="1.2" fill="var(--wa-ink)"/></svg>
+  <span data-i="w1">Chat with us</span>
+</a>
+
+<dialog aria-labelledby="joinTitle" id="join">
+<div class="m-head">
+<div class="m-top">
+<svg aria-hidden="true" viewBox="270 80 996 490"><use href="#dz-mark"></use></svg>
+<h2 data-i="k117" id="joinTitle">Join TDZ</h2>
+<button aria-label="Close" data-aria="ariaClose" class="x" data-i="k118" id="closeJoin" type="button">×</button>
+</div>
+<ol class="steps" id="stepper">
+<li data-i="k119">1 · Sign up</li>
+<li data-i="k120">2 · Your pitch</li>
+<li data-i="k121">3 · Review</li>
+</ol>
+</div>
+<form class="m-body" id="s1" novalidate="">
+<p class="intro" data-i="k122">Tell us who you are and where your idea is today.</p>
+<div class="row">
+<div class="f"><label data-i="k123" for="j-name">Full name</label><input autocomplete="name" id="j-name" required=""/></div>
+<div class="f"><label data-i="k124" for="j-email">Email</label><input autocomplete="email" id="j-email" required="" type="email"/></div>
+</div>
+<div class="row">
+<div class="f"><label data-i="k125" for="j-phone">Phone or WhatsApp <small>(optional)</small></label><input autocomplete="tel" id="j-phone" type="tel"/></div>
+<div class="f"><label data-i="k126" for="j-idea">Idea or startup name</label><input id="j-idea" required=""/></div>
+</div>
+<fieldset class="f">
+<legend data-i="k127">Where do you want to start?</legend>
+<div class="seg">
+<input checked="" id="j-inc" name="jtrack" type="radio" value="Incubator"/><label data-i="k128" for="j-inc">Incubator</label>
+<input id="j-acc" name="jtrack" type="radio" value="Accelerator"/><label data-i="k129" for="j-acc">Accelerator</label>
+</div>
+<small data-i="k130" id="trackHint">Incubator: you have an idea or early prototype.</small>
+</fieldset>
+<div class="f"><label data-i="k131" for="j-team">Team</label>
+<select id="j-team"><option data-i="k132" value="Solo founder">Solo founder</option><option data-i="k133" value="2 founders">2 founders</option><option data-i="k134" value="3 or more founders">3 or more founders</option></select></div>
+<div class="row">
+<div class="f"><label data-i="s1" for="j-stage">Where is your product today?</label>
+<select id="j-stage"><option data-i="s2" value="Idea">Still an idea</option><option data-i="s3" value="Prototype or beta">Prototype or beta</option><option data-i="s4" value="Launched">Launched</option></select></div>
+<div class="f"><label data-i="s5" for="j-cust">Customers today</label>
+<select id="j-cust"><option data-i="s6" value="None yet">None yet</option><option data-i="s7" value="Testers">A few testers</option><option data-i="s8" value="Active users">Active users</option><option data-i="s9" value="Paying customers">Paying customers</option></select></div>
+</div>
+<div class="row">
+<div class="f"><label data-i="s10" for="j-count">How many users or customers? <small>(approximate)</small></label><input id="j-count" type="number" min="0" step="1" inputmode="numeric" placeholder="0"/></div>
+<div class="f"><label data-i="s11" for="j-need">Your biggest need in the next 3 months</label>
+<select id="j-need"><option data-i="s12" value="Validate the idea">Validate the idea</option><option data-i="s13" value="Build the product">Build the product</option><option data-i="s14" value="Get first customers">Get first customers</option><option data-i="s15" value="Grow and raise money">Grow and raise money</option></select></div>
+</div>
+<div class="hp" aria-hidden="true"><label for="j-hp">Leave this empty</label><input id="j-hp" tabindex="-1" autocomplete="off"/></div>
+<p class="err" hidden="" id="e1"></p>
+</form>
+<form class="m-body" hidden="" id="s2" novalidate="">
+<p class="intro" data-i="k135">A strong pitch answers five questions. Write one or two sentences for each, as you would say them out loud.</p>
+<div class="f"><label data-i="k136" for="p-problem">The problem <small>What is broken, and who feels it?</small></label><textarea id="p-problem" required=""></textarea></div>
+<div class="f"><label data-i="k137" for="p-solution">Your solution <small>What do you build, and how does it fix the problem?</small></label><textarea id="p-solution" required=""></textarea></div>
+<div class="f"><label data-i="k138" for="p-who">Who it is for <small>Your first customers, as specifically as you can.</small></label><textarea id="p-who" required=""></textarea></div>
+<div class="f"><label data-i="k139" for="p-why">Why you <small>What makes you or your team the right people to build this?</small></label><textarea id="p-why" required=""></textarea></div>
+<fieldset class="f">
+<legend data-i="k140">What do you need from TDZ?</legend>
+<div class="chips" id="needs">
+<label><input id="n1" data-key="Workspace" type="checkbox" value="workspace"/><span data-i="k141">Workspace</span></label>
+<label><input id="n2" data-key="Mentorship" type="checkbox" value="mentorship"/><span data-i="k142">Mentorship</span></label>
+<label><input id="n3" data-key="Tech help" type="checkbox" value="technical help to build the product"/><span data-i="k143">Tech help</span></label>
+<label><input id="n4" data-key="Company setup" type="checkbox" value="help setting up the company"/><span data-i="k144">Company setup</span></label>
+<label><input id="n5" data-key="Fundraising prep" type="checkbox" value="fundraising preparation"/><span data-i="k145">Fundraising prep</span></label>
+<label><input id="n6" data-key="Founder community" type="checkbox" value="a community of founders"/><span data-i="k146">Founder community</span></label>
+</div>
+</fieldset>
+<div aria-live="polite" class="pitch">
+<p class="label" data-i="k147">Your 60-second pitch</p>
+<p class="txt" id="pitchTxt"></p>
+<div class="clock">
+<span id="words">0 words</span>
+<div aria-hidden="true" class="track-bar"><div class="zone"></div><div class="fill" id="fill" style="width:0"></div></div>
+<span class="verdict" data-i="k148" id="verdict">Target: 45 to 75 seconds</span>
+</div>
+</div>
+<p class="err" hidden="" id="e2"></p>
+</form>
+<div class="m-body" hidden="" id="s3">
+<p class="intro" data-i="k149">Here is your pitch. Practice it out loud before your pitch session.</p>
+<div class="pitch"><p class="label" id="r-label">Your pitch</p><p class="txt" id="r-pitch"></p></div>
+<div class="f">
+<p class="label" data-i="k150">Pitch readiness</p>
+<ul class="check" id="ready"></ul>
+</div>
+<div class="f">
+<p class="label" data-i="k151">How you become part of TDZ</p>
+<div class="next">
+<div><b data-i="k152">1. Team review</b><p data-i="k153">We read every pitch and reply by email.</p></div>
+<div><b data-i="k154">2. Pitch session</b><p data-i="k155">Selected founders present live to the TDZ team.</p></div>
+<div><b data-i="k156">3. Welcome to TDZ</b><p data-i="k157">Accepted founders join as an Incubator or Accelerator team.</p></div>
+</div>
+</div>
+<div class="f">
+<p class="label" data-i="k158">Send it to us</p>
+<p id="sendNote" data-i="s16" hidden>Press Send and your sign-up and pitch go straight to the TDZ team. We reply by email.</p>
+<div id="copyBlock"><p data-i="k159">Copy your sign-up and pitch and email it to <span class="mail">apply@thedesertzone.com</span>.</p>
+<pre class="summary" id="summary"></pre></div>
+</div>
+</div>
+<div class="m-foot">
+<button class="btn ghost sm" data-i="k160" hidden="" id="back" type="button">Back</button>
+<span aria-live="polite" class="label" id="copyMsg"></span>
+<span class="spacer"></span>
+<button class="btn" data-i="k161" id="next" type="button">Continue</button>
+</div>
+</dialog>
+<dialog class="gate" id="gate" aria-labelledby="gateTitle">
+<div class="gate-in">
+  <div class="gate-top">
+    <svg viewBox="270 80 996 490" aria-hidden="true"><use href="#dz-mark"></use></svg>
+    <div class="lang" role="group" data-aria="ariaLang" aria-label="Language"><button type="button" data-lang="en" aria-pressed="true">EN</button><button type="button" data-lang="es" aria-pressed="false">ES</button></div>
+    <button class="x" type="button" id="gateClose" aria-label="Close" data-aria="ariaClose" data-aria="ariaClose">×</button>
+  </div>
+  <p class="label" data-i="g1">// Welcome to The Desert Zone</p>
+  <h2 id="gateTitle" data-i="g2">Great ideas need a place <em>to launch.</em></h2>
+  <p class="sub" data-i="g3">Infrastructure and community for founders. Choose your first step.</p>
+  <div class="choices">
+    <button class="choice primary" type="button" data-join autofocus>
+      <span class="k" data-i="g4">01 · For founders</span>
+      <b><span data-i="g5">Pitch your idea</span><span aria-hidden="true">→</span></b>
+      <span data-i="g6">Sign up and prepare a 60-second pitch for the TDZ team.</span>
+    </button>
+    <a class="choice" id="gateNews" href="https://noticias.youngdesert.com/en/subscribe" target="_blank" rel="noopener">
+      <span class="k" data-i="g7">02 · For everyone</span>
+      <b><span data-i="g8">Get the newsletter</span><span aria-hidden="true">↗</span></b>
+      <span data-i="g9">Founder stories, events and open calls from The Desert ZONE.</span>
+    </a>
+  </div>
+  <button class="later" type="button" id="gateLater" data-i="g10">Explore the site first</button>
+</div>
+</dialog>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
